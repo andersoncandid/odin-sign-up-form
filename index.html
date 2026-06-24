@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Odin Sign-Up Form</title>
+  </head>
+  <body>
+    <div class="container-left">
+      <div class="logo">
+        <img src="img/background-img.jpg" alt="" />
+        <h1>ODIN</h1>
+        <img
+          class="logo-img"
+          src="https://raw.githubusercontent.com/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png"
+        />
+        <div class="pic-credits">
+          <span>Photo by</span>
+          <a href="https://unsplash.com/pt-br/@rafaelpeier">Rafael Peier</a>
+          <span> on </span>
+          <a href="https://unsplash.com/">Unsplash</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-right">
+      <p class="page-text">
+        This is not a real online service! You know you need something like this
+        in your life to help you realize your deepest dreams. Sign up now to get
+        started.
+      </p>
+      <p class="page=text">You know you want to.</p>
+      <form action="/handling-form-page" method="post">
+        <section class="form-main">
+          <h2>Let's do this!</h2>
+
+          <label for="first-name">FIRST NAME</label>
+          <input type="text" name="first name" id="first-name" required />
+
+          <label for="last-name">LAST NAME</label>
+          <input type="text" name="last name" id="last-name" required />
+          <span class="name feedback">Names is required</span>
+
+          <label for="email">EMAIL</label>
+          <input type="email" id="email" required />
+          <span class="email feedback">Email is required</span>
+
+          <label for="phone">PHONE NUMBER</label>
+          <input type="tel" id="phone" required />
+          <span class="phone feedback">Phone number is required</span>
+
+          <label for="pass">PASSWORD</label>
+          <input type="password" id="pass" pattern="^.{8,}$" required />
+          <label for="pass-confirm">PASSWORD</label>
+          <input type="password" id="pass-confirm" pattern="^.{8,}$" required />
+          <span class="pass feedback"
+            >Password must be at least 8 characters</span
+          >
+        </section>
+        <button type="submit" class="form-btn">Create Account</button>
+        <span>Already have an account?</span>
+        <a href="/login-page" class="login-link">Log in</a>
+      </form>
+    </div>
+  </body>
+</html>
