@@ -87,24 +87,26 @@ body {
 /* Left Section */
 
 .left-container {
-  min-width: 40%;
+  width: 100%;
   height: 100vh;
+  min-width: 400px;
+  min-height: 800px;
   position: relative;
+  flex: 1 1 40%;
 }
 
 .left-container > img {
-  min-width: 100%;
-  height: 100vh;
   position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .logo {
   width: 100%;
-  min-width: 400px;
   padding: 12px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
-  align-self: center;
+  top: 20%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -123,3 +125,9 @@ body {
 
 /* Right Section */
 
+.right-container {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  flex:1 1 60%;
+}
