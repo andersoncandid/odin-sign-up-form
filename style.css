@@ -77,6 +77,10 @@ h6 {
   isolation: isolate;
 }
 
+a {
+  color: inherit;
+}
+
 body {
   margin: 0;
   padding: 0 10vw;
@@ -99,6 +103,7 @@ body {
   position: absolute;
   width: 100%;
   height: 100%;
+  z-index: 0;
 }
 
 .logo {
@@ -111,7 +116,6 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  z-index: 5;
 }
 
 .logo > img {
@@ -123,11 +127,17 @@ body {
   font-size: 4rem;
 }
 
+.pic-credits {
+  position: absolute;
+  justify-self: center;
+  bottom: 1%;
+}
+
 /* Right Section */
 
 .right-container {
   width: 100%;
   height: 100vh;
   position: relative;
-  flex:1 1 60%;
+  flex: 1 1 60%;
 }
