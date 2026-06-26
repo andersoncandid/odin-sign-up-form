@@ -7,6 +7,7 @@
     <title>Odin Sign-Up Form</title>
   </head>
   <body>
+    <!-- Left Side -->
     <div class="left-container">
       <img src="img/background-img.jpg" alt="" />
       <div class="logo">
@@ -24,45 +25,80 @@
       </div>
     </div>
 
+    <!-- Right Side -->
     <div class="right-container">
-      <p class="page-text">
-        This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up now to get
-        started.
-      </p>
-      <p class="page=text">You know you want to.</p>
+      <div class="right-text">
+        <p class="page-text">
+          This is not a real online service! You know you need something like
+          this in your life to help you realize your deepest dreams. Sign up now
+          to get started.
+        </p>
+        <p class="page-text">You <em>know</em> you want to.</p>
+      </div>
+
+      <!-- Form -->
       <form action="/handling-form-page" method="post">
         <section class="form-main">
           <h2>Let's do this!</h2>
 
-          <label for="first-name">FIRST NAME</label>
-          <input type="text" name="first name" id="first-name" required />
+          <div class="form-row">
+            <div class="form-block">
+              <label for="first-name">FIRST NAME</label>
+              <input type="text" name="first name" id="first-name" required />
+              <span class="f-name feedback">Names is required</span>
+            </div>
 
-          <label for="last-name">LAST NAME</label>
-          <input type="text" name="last name" id="last-name" required />
-          <span class="name feedback">Names is required</span>
+            <div class="form-block">
+              <label for="last-name">LAST NAME</label>
+              <input type="text" name="last name" id="last-name" required />
+              <span class="l-name feedback">Names is required</span>
+            </div>
+          </div>
 
-          <label for="email">EMAIL</label>
-          <input type="email" id="email" required />
-          <span class="email feedback">Email is required</span>
+          <div class="form-row">
+            <div class="form-block">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" required />
+              <span class="email feedback">Email is required</span>
+            </div>
 
-          <label for="phone">PHONE NUMBER</label>
-          <input type="tel" id="phone" required />
-          <span class="phone feedback">Phone number is required</span>
+            <div class="form-block">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" required />
+              <span class="phone feedback">Phone number is required</span>
+            </div>
+          </div>
 
-          <label for="pass">PASSWORD</label>
-          <input type="password" id="pass" pattern="^.{8,}$" required />
-          <label for="pass-confirm">PASSWORD</label>
-          <input type="password" id="pass-confirm" pattern="^.{8,}$" required />
-          <span class="pass feedback"
-            >Password must be at least 8 characters</span
-          >
+          <div class="form-row">
+            <div class="form-block">
+              <label for="pass">PASSWORD</label>
+              <input type="password" id="pass" pattern="^.{8,}\$" required />
+              <span class="pass feedback"
+                >Password must be at least 8 characters</span
+              >
+            </div>
+
+            <div class="form-block">
+              <label for="pass-confirm">PASSWORD</label>
+              <input
+                type="password"
+                id="pass-confirm"
+                pattern="^.{8,}\$"
+                required
+              />
+              <span class="pass-conf feedback"
+                >Password must be at least 8 characters</span
+              >
+            </div>
+          </div>
         </section>
-        <button type="submit" class="form-btn">Create Account</button>
-        <div class="text-bot">
-          <span>Already have an account?</span>
-          <a href="/login-page" class="login-link">Log in</a>
-        </div>
+        <section class="form-foot">
+          <button type="submit" class="form-btn">Create Account</button>
+          <div class="text-bot">
+            <span>Already have an account?</span>
+            <a href="/login-page" class="login-link">Log in</a>
+          </div>
+        </section>
       </form>
     </div>
   </body>
